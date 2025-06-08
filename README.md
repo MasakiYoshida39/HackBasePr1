@@ -1,3 +1,5 @@
+修正点 ログインIDが123でログイン可能だがIDではなくメールアドレスに変更　プロフィール画面と連動させる
+
 参考　https://www.youtube.com/watch?v=dAdz_WzOC7U
 
 ## ✅ アプリの目的整理
