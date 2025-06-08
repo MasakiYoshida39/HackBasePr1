@@ -24,9 +24,10 @@ public class Operation {
 
     /**
      * 仮の認証処理（パスワードが "pass" のときだけOK）
+     * 仮の認証処理（ユーザーIDが "123" のときだけOK）
      */
     private boolean authenticate(String userId, String password) {
-        return password.equals("pass");
+        return  userId.equals("123") && password.equals("pass");
     }
 
     /**
