@@ -11,14 +11,13 @@
 			request.getRequestDispatcher("login.jsp").forward(request, response);
 		} else {
 	%>
-			<h1><%=storeHdr.getName() %></h1>
+			
 			<hr>
 			ユーザID：<%=cartHdr.getUserId() %>
 			<hr>
 
 			<%-- ナビ表示 --%>
-			｜<a href="select.jsp">商品選択</a>
-			｜<a href="cart.jsp">カート内一覧</a>
+		
 			｜<a href="logout-servlet">ログアウト</a>｜
 			<hr>
 	<%
