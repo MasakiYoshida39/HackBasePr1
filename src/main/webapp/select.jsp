@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ page import="model.Store" %>
-<%@ page import="model.Product" %>
+
+
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
 
@@ -13,8 +13,7 @@
 </head>
 <body>
 	<%@include file = "header-navi.jsp"%>
-	
-	 <div class="container mt-5">
+	<div class="container mt-5">
     <div class="card shadow">
       <div class="card-body">
         <div class="d-flex align-items-center mb-4">
@@ -50,7 +49,6 @@
       </div>
     </div>
   </div>
-	
 
 
 </body>
