@@ -13,6 +13,9 @@
 </head>
 <body>
 	<%@include file = "header-navi.jsp"%>
+
+	
+	
 	<div class="container mt-5">
     <div class="card shadow">
       <div class="card-body">
@@ -20,7 +23,10 @@
           <img src="/images/default-icon.png" alt="ユーザーアイコン" class="rounded-circle me-3" width="80" height="80">
           <div>
             <h4 class="mb-0">ユーザー名: </h4>
-            <p class="text-muted mb-1">メール: taro@example.com</p>
+            <%-- 下はDB接続まで修正不要--%>
+            <p class="text-muted mb-1">メール: <%= (String) session.getAttribute("email") %></p>
+            
+            
             <p class="text-muted">所属: フリーランス開発者</p>
           </div>
         </div>

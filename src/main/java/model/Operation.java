@@ -23,11 +23,11 @@ public class Operation {
     }
 
     /**
-     * 仮の認証処理（emailが "123" のときだけOK）
+     * 仮の認証処理（emailが ".com" のときだけOK）
      * 仮の認証処理（パスワードが "pass" のときだけOK）
      */
     private boolean authenticate(String email, String password) {
-        return  email.equals("123") && password.equals("pass");
+        return  email.equals(".com") && password.equals("pass");
     }
 
     /**
