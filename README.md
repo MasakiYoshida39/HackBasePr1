@@ -1,6 +1,7 @@
 修正点 ログインIDが123でログイン可能だがIDではなくメールアドレスに変更　プロフィール画面と連動させる
-[画面遷移図.pdf](https://github.com/user-attachments/files/20654457/default.pdf)
-[Uploading DB設計図.pdf…]()
+
+
+![image](https://github.com/user-attachments/assets/c544eaf3-e051-4d69-a689-4deeb081cfbe)
 
 参考　https://www.youtube.com/watch?v=dAdz_WzOC7U
 
