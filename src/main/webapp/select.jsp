@@ -44,7 +44,7 @@
 
         <div class="d-flex justify-content-end">
           <a href="/edit-profile" class="btn btn-primary me-2">プロフィール編集</a>
-          <a href="/logout" class="btn btn-danger">ログアウト</a>
+         
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@
 
 <%-- ユーザIDの表示 --%>
 <%
-    String userId = (String) session.getAttribute("userId");
+    String userId = (String) session.getAttribute("email");
 
     if (userId == null) {
         request.setAttribute("errorMsg", "再ログインをお願いします。");
@@ -11,7 +11,8 @@
 %>
 
     <hr>
-    ユーザID：<%= userId %>
+     <%--  メールアドレス：<%= email %> --%>
+   
     <hr>
 
     <%-- ナビ表示 --%>

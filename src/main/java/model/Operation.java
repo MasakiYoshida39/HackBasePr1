@@ -6,28 +6,28 @@ public class Operation {
 
     /**
      * ログイン処理
-     * @param userId リクエストパラメータ
+     * @param email リクエストパラメータ
      * @param password リクエストパラメータ
      * @param session セッションオブジェクト
      * @return true .. 正常、false .. ID／パスワード誤り
      */
-    public boolean loginProc(String userId, String password, HttpSession session) {
-        boolean result = authenticate(userId, password);
+    public boolean loginProc(String email, String password, HttpSession session) {
+        boolean result = authenticate(email, password);
 
         if (result) {
             // 認証成功時、ユーザーIDをセッションに保存
-            session.setAttribute("userId", userId);
+            session.setAttribute("email", email);
         }
 
         return result;
     }
 
     /**
+     * 仮の認証処理（emailが "123" のときだけOK）
      * 仮の認証処理（パスワードが "pass" のときだけOK）
-     * 仮の認証処理（ユーザーIDが "123" のときだけOK）
      */
-    private boolean authenticate(String userId, String password) {
-        return  userId.equals("123") && password.equals("pass");
+    private boolean authenticate(String email, String password) {
+        return  email.equals("123") && password.equals("pass");
     }
 
     /**

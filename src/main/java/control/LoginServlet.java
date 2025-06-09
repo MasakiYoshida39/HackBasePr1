@@ -25,18 +25,18 @@ public class LoginServlet extends jakarta.servlet.http.HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// リクエストパラメータの取得
 		request.setCharacterEncoding("UTF-8");
-		String userId = request.getParameter("userId");
+		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 
 		// ログイン処理
 		HttpSession session = request.getSession();	// セッションオブジェクト取得
 		Operation op = new Operation();
-		boolean result = op.loginProc(userId, password, session);
+		boolean result = op.loginProc(email, password, session);
 
 		// 転送先設定
 		String url = "select.jsp";
 		if (!result) {					// エラーの場合にはログイン画面に戻す
-			request.setAttribute("errorMsg", "ユーザID または パスワードに 誤りがあります。");	
+			request.setAttribute("errorMsg", "メールアドレス または パスワードに 誤りがあります。");	
 			url = "login.jsp";
 		}
 		

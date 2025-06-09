@@ -12,7 +12,7 @@
 	<h2>ログイン</h2>
 
 	<form action="login-servlet" method="post">
-		ユーザID： <input type="text" name="userId" required><br>
+		メールアドレス： <input type="text" name="email" required><br>
 		パスワード： <input type="password" name="password" required><br><br>
 		<input type="submit" value="ログイン">
 	</form>
