@@ -8,7 +8,6 @@
 - [ ] PreparedStatementを使用し検索する、理由StatementだとSQLインジェクション攻撃（悪意のあるSQLが入る）を起こる可能性があるため
 - [ ] ユーザーID（PK)をデータベースに入れる
 - [ ] 使用環境JDBC8.2.0
-- [ ] 
 ---
 
 
@@ -47,4 +46,5 @@
 
 ---
 
-
+### ❗ 参考
+- [ ] https://www.youtube.com/watch?v=BRylnpv7Pdk（ユーザー編集画面作成）
