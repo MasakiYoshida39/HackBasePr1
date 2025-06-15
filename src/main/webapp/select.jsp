@@ -49,7 +49,8 @@
         </ul>
 
         <div class="d-flex justify-content-end">
-          <a href="/edit-profile" class="btn btn-primary me-2">プロフィール編集</a>
+          <a href="edit-profile.jsp" class="btn btn-primary me-2">プロフィール編集</a>
+    
          
         </div>
       </div>

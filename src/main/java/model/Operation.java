@@ -36,5 +36,7 @@ public class Operation {
     public void logoutProc(HttpSession session) {
         session.invalidate();
     }
+
+    
 }
 
